@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "userName": "Art Lover",
+    "rating": 5,
+    "date": "2023-05-15",
+    "comment": "Absolutely stunning piece! The use of color is mesmerizing."
+  },
+  {
+    "id": "2",
+    "userName": "Gallery Owner",
+    "rating": 4,
+    "date": "2023-05-10",
+    "comment": "Impressive work. Would love to see more from this artist."
+  },
+  {
+    "id": "3",
+    "userName": "Casual Collector",
+    "rating": 5,
+    "date": "2023-05-05",
+    "comment": "This artwork has become the centerpiece of my living room. Love it!"
+  },
+  {
+    "id": "4",
+    "userName": "Rohan",
+    "rating": 4,
+    "date": "2023-05-05",
+    "comment": "This artwork has become the centerpiece of my living room. Love it!"
+  }
+]

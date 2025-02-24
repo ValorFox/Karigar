@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "artwork_name": "Monsoon Melody",
+    "artist": {
+      "name": "Raja Ravi Varma",
+      "profile": "Renowned Indian painter known for combining European techniques with Indian subjects."
+    },
+    "price": 120000,
+    "likes": 542,
+    "ratings": 4.8,
+    "reviewCount": 24,
+
+    "reviews": [
+      {
+        "reviewer_name": "Ananya Sharma",
+        "rating": 5,
+        "review": "Stunning work! A perfect blend of realism and tradition."
+      },
+      {
+        "reviewer_name": "Rahul Mehta",
+        "rating": 4.5,
+        "review": "Beautiful depiction of Indian culture, colors are mesmerizing."
+      }
+    ],
+    "thumbnail": "https://cdn.pixabay.com/photo/2022/04/20/12/16/abstract-art-7145098_1280.jpg",
+    "images": [
+      "https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/68655/281812/1571801126859_Monsoon_2019_-1_for_FB__80940.1687416284.jpg?c=2&imbypass=on",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/monsoon-2018-r-anil-nene.jpg",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/monsoon-snacks-sandeep-khedkar.jpg"
+    ],
+    "description": "A beautiful oil painting capturing the essence of Indian monsoons.",
+    "specifications": "Oil on canvas, 24x36 inches",
+    "category": "Paintings"
+  },
+  {
+    "id": 2,
+    "artwork_name": "Digital Deity",
+    "artist": {
+      "name": "Amrita Sher-Gil",
+      "profile": "A pioneer of modern Indian art, blending Western and Indian styles."
+    },
+    "price": 80000,
+    "likes": 320,
+    "ratings": 4.7,
+    "reviewCount": 24,
+    "reviews": [
+      {
+        "reviewer_name": "Vikram Kapoor",
+        "rating": 4.8,
+        "review": "Vibrant and detailed! The modern touch to mythology is impressive."
+      },
+      {
+        "reviewer_name": "Meera Iyer",
+        "rating": 4.6,
+        "review": "Modern yet traditional. A beautiful contrast!"
+      }
+    ],
+    "thumbnail": "https://blog.icons8.com/wp-content/uploads/old-uploads/2019/06/digital-illustration-brian-edward-miller-7.jpg",
+    "images": [
+      "https://blog.icons8.com/wp-content/uploads/old-uploads/2019/06/digital-illustration-brian-edward-miller-10.jpg",
+      "https://blog.icons8.com/wp-content/uploads/old-uploads/2019/06/digital-illustration-brian-edward-miller-17.jpg",
+      "https://blog.icons8.com/wp-content/uploads/old-uploads/2019/06/digital-illustration-brian-edward-miller-7.jpg"
+    ],
+    "description": "A digital reinterpretation of Indian mythology.",
+    "specifications": "Digital print on archival paper, 20x30 inches",
+    "category": "Digital Arts"
+  },
+  {
+    "id": 3,
+    "artwork_name": "Clay Heritage",
+    "artist": {
+      "name": "Madhvi Parekh",
+      "profile": "A leading Indian folk and contemporary artist."
+    },
+    "price": 35000,
+    "likes": 210,
+    "ratings": 4.5,
+    "reviewCount": 24,
+    "reviews": [
+      {
+        "reviewer_name": "Neha Verma",
+        "rating": 4.7,
+        "review": "Amazing craftsmanship, every detail is perfect!"
+      },
+      {
+        "reviewer_name": "Suresh Nair",
+        "rating": 4.3,
+        "review": "Brings back childhood memories of traditional clay art."
+      }
+    ],
+    "thumbnail": "https://cdn.pixabay.com/photo/2018/10/03/15/28/still-life-3721652_1280.jpg",
+    "images": [
+      "https://cdn.pixabay.com/photo/2016/09/18/12/22/pottery-1677997_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/05/17/17/00/cup-2321360_1280.jpg",
+      "https://cdn.pixabay.com/photo/2010/12/13/10/01/ceramic-2138_1280.jpg"
+    ],
+    "description": "Handmade pottery with intricate Indian tribal motifs.",
+    "specifications": "Terracotta clay, 12-inch diameter",
+    "category": "Pottery Art"
+  },
+  {
+    "id": 4,
+    "artwork_name": "Silk Symphony",
+    "artist": {
+      "name": "Sanjay Garg",
+      "profile": "A textile artist known for reviving traditional Indian weaving techniques."
+    },
+    "price": 95000,
+    "likes": 480,
+    "ratings": 4.9,
+    "reviewCount": 24,
+    "reviews": [
+      {
+        "reviewer_name": "Anjali Khanna",
+        "rating": 5,
+        "review": "Exquisite fabric! The texture and pattern are truly mesmerizing."
+      },
+      {
+        "reviewer_name": "Rohan Joshi",
+        "rating": 4.8,
+        "review": "Handwoven perfection, feels premium and authentic."
+      }
+    ],
+    "thumbnail": "https://cdn.pixabay.com/photo/2020/07/31/15/45/rugs-5453374_1280.jpg",
+    "images": [
+      "https://cdn.pixabay.com/photo/2016/02/19/11/21/raw-1209658_1280.jpg",
+      "https://cdn.pixabay.com/photo/2020/06/04/17/21/fabric-5259684_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/02/19/11/16/raw-1209611_1280.jpg"
+    ],
+    "description": "A handwoven silk textile featuring Mughal-inspired patterns.",
+    "specifications": "Pure silk, 6 yards",
+    "category": "Textile Artwork"
+  },
+  {
+    "id": 5,
+    "artwork_name": "Warrior’s Gaze",
+    "artist": {
+      "name": "M.F. Husain",
+      "profile": "A legendary Indian painter known for bold and dynamic compositions."
+    },
+    "price": 500000,
+    "likes": 1042,
+    "ratings": 5.0,
+    "reviewCount": 24,
+    "reviews": [
+      {
+        "reviewer_name": "Kunal Das",
+        "rating": 5,
+        "review": "Masterpiece! The intensity in the eyes is captivating."
+      },
+      {
+        "reviewer_name": "Pooja Agarwal",
+        "rating": 4.9,
+        "review": "Powerful expression, truly a work of genius!"
+      }
+    ],
+    "thumbnail": "https://www.tallengestore.com/cdn/shop/products/Fantasy_Art_-_Warrior_On_Elephant_With_Tiger_f57116f2-e595-4e31-b18a-36cbc1a8feef.jpg?v=1481893848",
+    "images": [
+      "https://m.media-amazon.com/images/I/61EQ7wF+ZSL._AC_UF1000,1000_QL80_.jpg",
+      "https://t4.ftcdn.net/jpg/07/09/42/25/360_F_709422590_mwWTnzqKbH4dA0p0meOCbsEJGBdSdTsl.jpg",
+      "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_700,h_460/https://www.sikhiart.com/wp-content/uploads/2024/12/Bhai-Bachittar-Singh-ji-by-Bhagat-Singh-Sikhi-Art.jpg"
+    ],
+    "description": "A striking portrait of an Indian warrior in modern abstract style.",
+    "specifications": "Acrylic on canvas, 30x40 inches",
+    "category": "Paintings"
+  },
+  {
+    "id": 6,
+    "artwork_name": "Tribal Echoes",
+    "artist": {
+      "name": "Jangarh Singh Shyam",
+      "profile": "A celebrated Gond artist known for vibrant tribal paintings."
+    },
+    "price": 45000,
+    "likes": 290,
+    "ratings": 4.6,
+    "reviewCount": 24,
+    "reviews": [
+      {
+        "reviewer_name": "Ramesh Yadav",
+        "rating": 4.6,
+        "review": "Rich storytelling. The details are outstanding."
+      },
+      {
+        "reviewer_name": "Sonia Malhotra",
+        "rating": 4.5,
+        "review": "Great colors and patterns, love the traditional feel."
+      }
+    ],
+    "thumbnail": "https://cdn.pixabay.com/photo/2023/12/21/05/55/black-8461280_1280.jpg",
+    "images": [
+      "https://i.ytimg.com/vi/UJtefdDzgpY/maxresdefault.jpg",
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/painting/4/k/8/19-25-1-abstract-tribal-art-texture-paper-framed-art-print-original-imagqy42nffsub89.jpeg?q=20&crop=false",
+      "https://dailydesignist.com/cdn/shop/files/2024102761110006.jpg?v=1727882647"
+    ],
+    "description": "A traditional Gond painting showcasing tribal folklore.",
+    "specifications": "Natural pigments on handmade paper, 22x28 inches",
+    "category": "Paintings"
+  }
+]

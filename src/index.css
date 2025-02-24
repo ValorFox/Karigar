@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.playwrite-it-moderna-Cursive {
+    font-family: "Playwrite IT Moderna", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
