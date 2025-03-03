@@ -10,8 +10,20 @@ export class AuthService {
         password
       );
       if (returnedAccount) {
-        console.log(returnedAccount);
         return returnedAccount;
+      }
+    } catch (error) {
+      throw error;
+    }
+  }
+  async login({ email, password }) {
+    try {
+      const response = await account.createEmailPasswordSession(
+        email,
+        password
+      );
+      if (response) {
+        return response;
       }
     } catch (error) {
       throw error;

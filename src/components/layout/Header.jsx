@@ -10,15 +10,18 @@ import {
 import { List } from "phosphor-react";
 import React, { useState } from "react";
 import { MobileSidebar } from "../specific/MobileSidebar";
+import { ShoppingCartSimple } from "@phosphor-icons/react";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const { email } = useSelector((state) => state.userState);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <MobileSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Navbar
-        className="bg-[#D1BE9C] w-full py-3"
+        className="bg-[#D1BE9C] w-full py-3 z-30"
         height={"auto"}
         shouldHideOnScroll
       >
@@ -73,22 +76,33 @@ const Header = () => {
             <Link to={"/contact-us"}>Contact Us</Link>
           </NavbarItem>
         </NavbarContent>
-
         <NavbarContent justify="left">
-          <ButtonGroup
-            className="rounded-lg lg:flex hidden p-2"
-            size="small"
-          >
-            <Link to={"/login"} className="mx-2">
+          <Link to={"/cart"}>
+            <ShoppingCartSimple
+              size={25}
+              weight="regular"
+              className="hover:cursor-pointer"
+            />
+          </Link>
+        </NavbarContent>
+
+        {email && <span>{email}</span>}
+        {!email && (
+          <NavbarContent justify="left">
+            <ButtonGroup className="rounded-lg lg:flex hidden p-2" size="small">
+              <Link to={"/login"} className="mx-2">
+                Login
+              </Link>
+              <Link to={"/signup"} className="mx-2">
+                SignUp
+              </Link>
+            </ButtonGroup>
+
+            <Link to={"/login"} className="lg:hidden">
               Login
             </Link>
-            <Link to={"/signup"} className="mx-2">
-              SignUp
-            </Link>
-          </ButtonGroup>
-
-          <Link to={"/login"} className="lg:hidden">Login</Link>
-        </NavbarContent>
+          </NavbarContent>
+        )}
       </Navbar>
     </>
   );

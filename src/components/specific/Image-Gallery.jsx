@@ -12,11 +12,11 @@ export default function ImageGallery({ images }) {
   if (images) {
     return (
       <div className="relative">
-        <div className="aspect-square relative overflow-hidden rounded-lg bg-rose-700">
+        <div className="aspect-square relative overflow-hidden rounded-lg">
           <img
             src={images[currentImage]}
             alt={`Artwork image ${currentImage + 1}`}
-            className="object-cover bg-green-500 h-full"
+            className="object-cover h-full"
           />
         </div>
         <Button

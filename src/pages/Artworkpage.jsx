@@ -1,11 +1,13 @@
+import { useDispatch } from "react-redux";
+import { useState, useEffect } from "react";
 import { Star, Truck } from "phosphor-react";
 import { useParams } from "react-router-dom";
+import Artworks from "../Constents/Artworks.json";
 import { Button, Divider } from "@nextui-org/react";
 import Reviews from "../components/specific/Reviews";
 import ImageGallery from "../components/specific/Image-Gallery";
 import RelatedArtworks from "../components/common/Related-Artworks";
-import { useState, useEffect } from "react";
-import Artworks from "../Constents/Artworks.json";
+import { addItemToCart } from "../Redux/Slice/cartSlice";
 
 function getArtwork(id) {
   return Artworks.find((art) => art.id == id);
@@ -13,7 +15,26 @@ function getArtwork(id) {
 
 export default function ArtworkPage() {
   const { artid } = useParams();
+  const dispatch = useDispatch();
   const [artwork, setArtwork] = useState(null);
+
+  const additemTocart = () => {
+    if (artwork) {
+      console.log("I am calles");
+      dispatch(
+        addItemToCart({
+          productId: artwork.Id,
+          productName: artwork.artwork_name,
+          imageUrl: artwork.thumbnail,
+          artistName: artwork.artist.name,
+          price: artwork.price,
+          description: artwork.description,
+        })
+      );
+    }
+  };
+
+  console.log(artwork);
 
   useEffect(() => {
     const art = getArtwork(artid);
@@ -51,8 +72,9 @@ export default function ArtworkPage() {
               {artwork.price.toLocaleString()}
             </p>
             <Button
-              className="mt-6 w-full md:w-auto bg-[#181616] text-yellow-50 rounded-lg hover:cursor-pointer"
               size="lg"
+              className="mt-6 w-full md:w-auto bg-[#181616] text-yellow-50 rounded-lg hover:cursor-pointer"
+              onPress={additemTocart}
             >
               Add to Cart
             </Button>

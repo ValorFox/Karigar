@@ -14,7 +14,7 @@ function LoadingBar() {
         {/* Loading message */}
         <div className="p-2 ml-8 flex flex-col">
           <span className="text-xl text-amber-50">Loading...</span>
-          <span className="text-sm text-amber-50">Please wait</span>
+          <span className="text-sm text-amber-50 font-light">Please wait</span>
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ const MasonryGrid = () => {
             likes={art.likes}
             productId={art.id}
             key={index}
+            description={art.description}
           />
         ))}
       </div>

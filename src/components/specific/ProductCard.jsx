@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Heart, Share, ShoppingCartSimple } from "phosphor-react";
+import { Heart, ShoppingCartSimple } from "phosphor-react";
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import { useDispatch } from "react-redux";
+import { addItemToCart } from "../../Redux/Slice/cartSlice";
 
 export default function ProductCard({
   imageUrl,
@@ -10,12 +12,27 @@ export default function ProductCard({
   productName,
   price = 0,
   likes = 0,
+  description,
 }) {
   const [liked, setLiked] = useState(false);
   const handleLike = () => {
-    console.log("clled");
     setLiked((prev) => !prev);
   };
+  const dispatch = useDispatch();
+  
+  const additemTocart = () => {
+    dispatch(
+      addItemToCart({
+        productId,
+        productName,
+        imageUrl,
+        artistName,
+        price,
+        description,
+      })
+    );
+  };
+
   return (
     <Card className="max-w-sm rounded-lg bg-[#B4A390] shadow-lg shadow-[#9f8a73]">
       <CardBody className="p-0 w-full">
@@ -58,6 +75,7 @@ export default function ProductCard({
           <Button
             className="bg-[#181616] rounded-lg lg:text-sm text-xs text-white my-1"
             endContent={<ShoppingCartSimple size={18} color="#B4A390" />}
+            onPress={additemTocart}
           >
             <p className="font-light text-white lg:text-sm lg:inline hidden">
               Add to cart

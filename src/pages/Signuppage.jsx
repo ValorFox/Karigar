@@ -1,19 +1,22 @@
-import { X } from "phosphor-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MailIcon } from "../utils/MailIcon";
 import { Button, Input } from "@nextui-org/react";
 import authService from "../appwrite/authService";
 import { PasswordIcon } from "../utils/PasswordIcon";
 import LoadingBar from "../components/common/LoadingBar";
+import ErrorModal from "../components/common/ErrorModal";
 
 function Signuppage() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(null);
   const [loading, setIsLoading] = useState(false);
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const handleSubmit = async () => {
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    console.log("hey");
     setIsLoading(true);
     setError("");
 
@@ -25,6 +28,8 @@ function Signuppage() {
 
     try {
       const response = await authService.createAccount({ email, password });
+      setIsLoading(false);
+      navigate("/welcome-page");
     } catch (error) {
       if (error instanceof Error) {
         const message = error.message.replace(
@@ -65,7 +70,10 @@ function Signuppage() {
               </Link>
             </div>
             <div className="h-[.5px] bg-[#4A4238] mt-4 mx-8"></div>
-            <form className="w-full lg:p-8 p-4 flex flex-col gap-y-5 mt-2">
+            <form
+              className="w-full lg:p-8 p-4 flex flex-col gap-y-5 mt-2"
+              onSubmit={handleFormSubmit}
+            >
               <p className="text-2xl my-2">SignUp</p>
               <Input
                 type="email"
@@ -89,13 +97,13 @@ function Signuppage() {
               <p className="text-end">Report Problem</p>
               <Button
                 className="bg-[#4A4238] text-white rounded-lg hover:cursor-pointer"
-                onPress={handleSubmit}
+                type="submit"
               >
                 Signup
               </Button>
               <p className="text-center">
                 Already have any account ?
-                <Link to={"/login"} className="">
+                <Link to={"/login"} className="ml-1">
                   Signin
                 </Link>
               </p>
@@ -108,24 +116,3 @@ function Signuppage() {
 }
 
 export default Signuppage;
-
-function ErrorModal({ errorMsg, setError }) {
-  return (
-    <div className="w-screen h-screen bg-black/60 max-w-screen max-h-screen absolute z-50 backdrop-blur-md flex justify-center items-center">
-      <div className="lg:w-[30%] w-[95%] bg-[#181616] rounded-lg overflow-hidden">
-        <div className="w-full p-3 text-white font-light flex justify-between">
-          <p className="text-2xl">Error</p>
-          <X
-            size={25}
-            color="white"
-            className="hover:cursor-pointer"
-            onClick={() => setError(null)}
-          />
-        </div>
-        <div className="w-full px-3 py-6 flex justify-center items-center text-white">
-          {errorMsg}
-        </div>
-      </div>
-    </div>
-  );
-}
