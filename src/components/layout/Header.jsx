@@ -54,7 +54,7 @@ const Header = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              to="/category"
+              to="#"
               className="text-black relative transition-colors duration-150 hover:text-[#7E6B5A] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#7E6B5A] after:transition-all after:duration-300 hover:after:w-full"
             >
               Category

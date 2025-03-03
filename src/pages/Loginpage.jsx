@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Input } from "@nextui-org/react";
 import { MailIcon } from "../utils/MailIcon";
+import { PasswordIcon } from "../utils/PasswordIcon";
 
 function Loginpage() {
   return (
@@ -42,6 +43,9 @@ function Loginpage() {
               placeholder="password"
               type="password"
               className="bg-[#E4DAC8] rounded-lg"
+              startContent={
+                <PasswordIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+              }
             />
             <p className="text-end">Forget Password</p>
             <Button className="bg-[#4A4238] text-white rounded-lg hover:cursor-pointer">
